@@ -1,15 +1,13 @@
-package main
+package init
 
 import (
 	"log"
 	"os"
 	"path"
-
-	"gt/commit"
 )
 
-// this function for init gt
-// if success it's will be create folder .git
+// Init function for init gt
+// if success it's will be create folder .gt
 // commit for run init
 // gt init <filename>
 func Init() {
@@ -29,7 +27,7 @@ func Init() {
 		pwd = path.Join(pwd, foldername)
 	}
 
-	git_path := path.Join(pwd, ".git")
+	git_path := path.Join(pwd, ".gt")
 	if err := os.Mkdir(git_path, 0755); err != nil {
 		log.Println(err)
 		return
@@ -45,18 +43,4 @@ func Init() {
 	}
 
 	log.Printf("Initialize empty gt repository in %s", git_path)
-}
-
-func main() {
-
-	command := os.Args[1]
-
-	switch command {
-	case "init":
-		Init()
-	case "commit":
-		commit.Commit()
-	default:
-		log.Printf("gt : '%s' is not a gt command ", command)
-	}
 }
