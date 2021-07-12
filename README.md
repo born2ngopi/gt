@@ -2,6 +2,18 @@
 
 rebuilding git with golang
 
+## git init
+
+command :
+``` bash
+gt init
+# or
+gt init .
+# or
+gt init <foldername>
+```
+
+
 ## TODO
 - [x] git init
 - [ ] git add
