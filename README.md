@@ -2,7 +2,7 @@
 
 rebuilding git with golang
 
-## git init
+## gt init
 
 command :
 ``` bash
