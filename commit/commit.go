@@ -21,7 +21,7 @@ func Commit() {
 		return
 	}
 
-	git_path := path.Join(root_path, ".git")
+	git_path := path.Join(root_path, ".gt")
 	db_path := path.Join(git_path, "objects")
 	_ = db_path
 
