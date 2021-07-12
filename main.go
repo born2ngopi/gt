@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"gt/commit"
-	"gt/init"
+	gtInit "gt/init"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 
 	switch command {
 	case "init":
-		init.Init()
+		gtInit.Init()
 	case "commit":
 		commit.Commit()
 	default:
