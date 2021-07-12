@@ -10,7 +10,7 @@ import (
 	"os"
 	"path"
 
-	"gt/workspace"
+	"github.com/needkopi/gt/workspace"
 )
 
 func Commit() {
