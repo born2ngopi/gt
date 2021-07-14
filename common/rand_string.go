@@ -1,13 +1,22 @@
 package common
 
-import "math/rand"
+import (
+	"fmt"
+	"math/rand"
+	"strings"
+	"time"
+)
 
-var letterRunes = []rune("0123456789abcdefghijKLMNOPQRSTUVWXYZ0123456789ABCDEFGHIJklmnopqrstuvwxyz")
+var numRunes = []rune("0123456789")
+var alphaRunes = []rune("abcdefghijklmnopqrstuvwxyz")
+var alphaNumRunes = []rune(fmt.Sprintf("%s%s", string(numRunes), string(alphaRunes)))
+var alphaNumWithUpperRunes = []rune(fmt.Sprintf("%s%s", string(alphaNumRunes), strings.ToUpper(string(alphaNumRunes))))
 
 func GetRandString() string {
+	rand.Seed(time.Now().UnixNano())
 	b := make([]rune, 40)
 	for i := range b {
-		b[i] = letterRunes[rand.Intn(len(letterRunes))]
+		b[i] = alphaNumWithUpperRunes[rand.Intn(len(alphaNumWithUpperRunes))]
 	}
 	return string(b)
 }
