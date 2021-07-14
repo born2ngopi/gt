@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/needkopi/gt/commit"
-	"github.com/needkopi/gt/init"
+	gtInit "github.com/needkopi/gt/init"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 
 	switch command {
 	case "init":
-		init.Init()
+		gtInit.Init()
 	case "commit":
 		commit.Commit()
 	default:
