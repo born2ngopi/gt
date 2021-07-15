@@ -1,3 +1,3 @@
-module github.com/needkopi/gt
+module gt
 
 go 1.16

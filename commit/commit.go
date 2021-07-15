@@ -11,8 +11,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/needkopi/gt/common"
-	"github.com/needkopi/gt/workspace"
+	"gt/common"
+	"gt/workspace"
 )
 
 func Commit() {

@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/needkopi/gt/commit"
-	gtInit "github.com/needkopi/gt/init"
+	"gt/commit"
+	gtInit "gt/init"
 )
 
 func main() {
