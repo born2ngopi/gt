@@ -14,7 +14,7 @@ Git adalah suatu tool yang sering kali digunakan untuk pengembangan software. Fu
 
 
 
-
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Bab 2
 
@@ -97,7 +97,7 @@ Folder `.git/objects` digunakan untuk menyimpan data atau database bagi git.
 
 Folder `.git/refs` ini digunakan untuk menyimpan berbagai jenis pointer yang disimpan didalam database `.git/object`. pointer ini bisanya hanya file yang berisi id. Folder `.git/refs/heads` berfungsi untuk menyimpan id commit terakhir di lokal. Folder `.git/refs/remotes` berfungsi menyimpan id commit terakhir dari berbagai remote di repository. Folder `.git/refs/tags` berfungsi untuk menyimpan tags.
 
-
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Bab 3
 
