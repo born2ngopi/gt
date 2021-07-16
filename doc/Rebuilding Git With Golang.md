@@ -39,3 +39,28 @@ Langkah pertama saat kita menggunakan git biasanya menggunakan comand `git init`
    |- tags
 ```
 
+#### .git/config
+
+File `.git/config` berisi konfigurasi setting yang hanya berlaku untuk repositorynya sendiri. 
+
+``` bash
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+```
+
+* kita menggunakan repository format versi 0
+* git haru menyimpan setiap mode dari file (contoh apakah file `a` dapat di eksekusi)
+* bukan [bare](https://www.geeksforgeeks.org/bare-repositories-in-git/) repository, artinya repository ini adalah tempat pengguna mengedit pekerjaan, copy file, dan membuat commit.
+* reflog true, artinya semua perubahan pada file di .git/refs dicatan di .git/log
+
+File `.git/config` juga menyimpan alamat remote repository
+
+``` bash
+[remote "origin"]
+        url = git@github.com:needkopi/gt.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+```
+
