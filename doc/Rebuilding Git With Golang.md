@@ -36,6 +36,7 @@ Langkah pertama saat kita menggunakan git biasanya menggunakan comand `git init`
 |  |- pack
 |- refs
    |- heads
+   |- remotes
    |- tags
 ```
 
@@ -87,3 +88,11 @@ Folder ini berisi script yang akan dijalankan oleh git sebagai bagian dari perin
 #### .git/info
 
 Secara default ketika pertama kali menjalankan perintah `git init` , git akan membuat kan file baru bernama `.git/info/exclude`. Mungkin kebanyakan dari kita lebih familiar dengan file `.gitignore`, fungsi dari kedua file tersebut mirip, yaitu untuk mendeteksi atau mengabaikan file-file mana saja yang tidak akan di bagikan ke repository. Perbedaan dari keduanya file `.gitignore` bersifat global, yang artinya semua user yang mengakses repository tersebut akan mengabaikan file yang sama. sedangkan untuk file `.git/info/exclude` ini hanya berlaku untuk user tersebut.
+
+#### .git/objects
+
+Folder `.git/objects` digunakan untuk menyimpan data atau database bagi git.
+
+#### .git/refs
+
+Folder `.git/refs` ini digunakan untuk menyimpan berbagai jenis pointer yang disimpan didalam database `.git/object`. pointer ini bisanya hanya file yang berisi id. Folder `.git/refs/heads` berfungsi untuk menyimpan id commit terakhir di lokal. Folder `.git/refs/remotes` berfungsi menyimpan id commit terakhir dari berbagai remote di repository. Folder `.git/refs/tags` berfungsi untuk menyimpan tags.
