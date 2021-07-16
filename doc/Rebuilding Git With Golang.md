@@ -64,3 +64,12 @@ File `.git/config` juga menyimpan alamat remote repository
         fetch = +refs/heads/*:refs/remotes/origin/*
 ```
 
+#### .git/description
+
+File ini berisi nama repository, ini dipakai oleh [gitweb](https://git-scm.com/book/en/v2/Git-on-the-Server-GitWeb). secara default isi file tersebut seperti ini :
+
+``` bash
+Unnamed repository; edit this file 'description' to name the repository.
+```
+
+ 
