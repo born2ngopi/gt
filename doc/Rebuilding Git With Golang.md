@@ -84,3 +84,6 @@ ref: refs/heads/master
 
 Folder ini berisi script yang akan dijalankan oleh git sebagai bagian dari perintah inti tertentu. Contohnya ketika kita menjalankan perintah `commit`, git akan mengeksekusi file `.git/hooks/pre-commit` jika file tersebut ada. ecara default git akan membuatnya dengan nama `.git/hooks/pre-commit.sample` , kita dapat mengaktifkan file tersebut dengan cara menghapus `.sample`.
 
+#### .git/info
+
+Secara default ketika pertama kali menjalankan perintah `git init` , git akan membuat kan file baru bernama `.git/info/exclude`. Mungkin kebanyakan dari kita lebih familiar dengan file `.gitignore`, fungsi dari kedua file tersebut mirip, yaitu untuk mendeteksi atau mengabaikan file-file mana saja yang tidak akan di bagikan ke repository. Perbedaan dari keduanya file `.gitignore` bersifat global, yang artinya semua user yang mengakses repository tersebut akan mengabaikan file yang sama. sedangkan untuk file `.git/info/exclude` ini hanya berlaku untuk user tersebut.
