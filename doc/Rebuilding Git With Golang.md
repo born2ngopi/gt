@@ -28,7 +28,7 @@ Langkah pertama saat kita menggunakan git biasanya menggunakan comand `git init`
 |- description
 |- HEAD
 |- hooks
-|  |- update.sample
+|  |- pre-commit.sample
 |- info
 |  |- exclude
 |- objects
@@ -79,4 +79,8 @@ File ini berisi referensi commit saat ini.
 ``` bash
 ref: refs/heads/master
 ```
+
+#### .git/hooks
+
+Folder ini berisi script yang akan dijalankan oleh git sebagai bagian dari perintah inti tertentu. Contohnya ketika kita menjalankan perintah `commit`, git akan mengeksekusi file `.git/hooks/pre-commit` jika file tersebut ada. ecara default git akan membuatnya dengan nama `.git/hooks/pre-commit.sample` , kita dapat mengaktifkan file tersebut dengan cara menghapus `.sample`.
 
