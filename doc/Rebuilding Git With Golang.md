@@ -72,4 +72,11 @@ File ini berisi nama repository, ini dipakai oleh [gitweb](https://git-scm.com/b
 Unnamed repository; edit this file 'description' to name the repository.
 ```
 
- 
+ #### .git/HEAD
+
+File ini berisi referensi commit saat ini. 
+
+``` bash
+ref: refs/heads/master
+```
+
